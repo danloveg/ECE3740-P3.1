@@ -9,7 +9,8 @@ package userinterfacegui;
  *
  * @author loveboat
  */
-public class ClientUserInterface extends javax.swing.JFrame {
+public class ClientUserInterface extends javax.swing.JFrame
+                                 implements userinterface.UserInterface {
 
     /**
      * Creates new form ClientUserInterface
@@ -71,11 +72,19 @@ public class ClientUserInterface extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new ClientUserInterface().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new ClientUserInterface().setVisible(true);
         });
+    }
+    
+    
+    /**
+     * Update the user interface with a new message.
+     * @param message The message to be appended to the user message display.
+     */
+    @Override
+    public void update(String message) {
+        // TODO: Append text to messageTextBox
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
