@@ -1,0 +1,8 @@
+/ClientGUI/build/
+/ClientGUI/dist/
+/ClientGUI/nbproject/private/
+/ClientGUI/nbproject/build/
+/ClientGUI/nbproject/dist/
+
+*.class
+
